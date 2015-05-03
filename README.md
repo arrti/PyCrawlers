@@ -4,7 +4,7 @@
 
 ## weibo_album
 
-windows下的新浪微博相册爬虫，可以下载整个微相册的照片，默认是下载原图，可以修改代码进行设置。因为微相册是动态加载的，所以用了[phantomjs](http://phantomjs.org/)来获取网页源码，
+windows下的新浪微博相册爬虫，可以下载整个微相册的照片，并将本次下载失败的图片链接保存在`failed_download_urls.txt`，默认是下载原图，可以修改代码进行设置。因为微相册是动态加载的，所以用了[phantomjs](http://phantomjs.org/)来获取网页源码，
 使用python的[selenium](https://pypi.python.org/pypi/selenium)来进行调用。  
 *   用法  
 修改`weibo_album.py`中的`phantomjs.exe`的路径   
